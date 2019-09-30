@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://139.155.35.114:3306/blog?useUnicode=true&characterEncoding=utf-8&serverTimezone= Asia/Shanghai
+    username: root
+    password: li1973666848
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  thymeleaf:
+    cache: false
+
+logging:
+  level:
+    root: info
+    com.lily: debug
+  file: log/blog-dev.log

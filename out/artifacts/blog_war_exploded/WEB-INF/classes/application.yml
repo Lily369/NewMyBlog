@@ -1,0 +1,19 @@
+spring:
+  thymeleaf:
+    mode: LEGANCYHTML5
+  profiles:
+    active: pro
+    messages:
+      basename: /messages_zh_CN
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+comment.avatar: /images/pltx.jpg
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
