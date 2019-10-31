@@ -65,7 +65,7 @@ public class BlogController {
      * @return
      */
     @PostMapping("/blogs/search")
-    public String search(@PageableDefault(size=2,sort = {"updateTime"},direction = Sort.Direction.DESC) Pageable pageable, BlogQuery blog, Model model){
+    public String search(@PageableDefault(size=10,sort = {"updateTime"},direction = Sort.Direction.DESC) Pageable pageable, BlogQuery blog, Model model){
         model.addAttribute("page",blogService.listBlog(pageable,blog));
         return "admin/blogs :: blogList";
     }
